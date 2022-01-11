@@ -1,0 +1,16 @@
+# Ignore the python compiled files
+
+*.pyc
+
+# Ignore the venv directories and configuration
+
+bin
+include
+lib
+lib64
+share
+pyvenv.cfg
+
+# Ignore static
+
+my_life_calendar_project/static/
