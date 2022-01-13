@@ -18,9 +18,11 @@ from django.urls import path
 
 import home.views
 import hello_world.views
+import my_life_calendar.views
 
 urlpatterns = [
     #path('admin/', admin.site.urls),
-    path('',  home.views.welcome, name = 'home'),
-    path('hello_world/',  hello_world.views.hello_world, name = 'hello_world'),
+    #path('',  home.views.welcome, name = 'home'),
+    #path('hello_world/',  hello_world.views.hello_world, name = 'hello_world'),
+    path('',  my_life_calendar.views.my_life_calendar, name = 'home'),
 ]

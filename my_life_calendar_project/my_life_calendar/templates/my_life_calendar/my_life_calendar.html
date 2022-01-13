@@ -1,0 +1,31 @@
+{% extends "home/home.html" %}
+{% block content %}
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1>My Life Calendar</h1>
+    </div>
+  </section> 
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div class="text-left">
+        <div class="row">
+          <div class="col-sm-12">
+            <h3>Inputs</h3>
+            <form method="post" action="" role="form" novalidate>
+              {% csrf_token %}
+              <label for="birth-date">Birth Date:</label>
+              <input type="date" name="birth-date" value="2022-01-01" min="1900-01-01" max="2022-12-31">
+              <br>
+              <label for="life-expectancy">Life Expectancy:</label>
+              <input type="number" name="life-expectancy" value="83" min="1" max="150">
+              <br>
+              <input type="submit" name="submit-button" class="btn btn-info btn-send" value="Submit">
+            </form>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </div>    
+  </div>
+
+{% endblock %}

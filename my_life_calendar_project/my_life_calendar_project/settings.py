@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'home',
     'hello_world',
+    'my_life_calendar'
 ]
 
 MIDDLEWARE = [
