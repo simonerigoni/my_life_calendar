@@ -1,10 +1,12 @@
 from django.shortcuts import render
-
+from django.utils.safestring import mark_safe
 import datetime
 
 # Create your views here.
 
 def my_life_calendar(request):
+
+    html_table = ''
 
     if request.method == 'POST':
         if 'submit-button' in request.POST:
@@ -31,15 +33,40 @@ def my_life_calendar(request):
             else:
                 death_date = birth_date + datetime.timedelta(days = life_expectancy * 365)
                 delta = datetime.timedelta(days = 1)
-                current_date = birth_date
+                current_date = datetime.datetime.strptime(str(birth_date.year) + '-01-01', '%Y-%m-%d')
+
+                dates = []
 
                 while current_date <= death_date:
-                    print('{} {} {} {}'.format(current_date.strftime('%A'), current_date.day, current_date.month, current_date.year))
+                    #print('{} {} {} {}'.format(current_date.strftime('%A'), current_date.day, current_date.strftime('%B'), current_date.year))
+                    dates.append(current_date)
                     current_date += delta
 
+                list_years = list(set([d.year for d in dates]))
+                list_years.sort()
+
+                str_table = '<table>'
+                # str_table += '<tr><td>  </td>'
+
+                # str_table += '</tr>'
+
+                for year in list_years:
+                    str_table += '<tr><td> ' + str(year) + ' </td>'
+
+                    for d in dates:
+                        if d.year == year:
+                            str_table += '<td> ' + str(d.day) + ' </td>'
+                        else:
+                            pass
+
+                    str_table += '</tr>'
+
+                str_table += '</table>'
+                html_table =  mark_safe(str_table)
+                
         else:
             pass
     else:
         pass
 
-    return render(request, template_name = 'my_life_calendar/my_life_calendar.html')
+    return render(request, 'my_life_calendar/my_life_calendar.html', {'html_table':html_table})

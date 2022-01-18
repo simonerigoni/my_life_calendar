@@ -1,0 +1,5 @@
+source bin/activate
+
+cd my_life_calendar_project && python manage.py collectstatic
+
+python my_life_calendar_project/manage.py runserver 
