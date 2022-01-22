@@ -19,4 +19,15 @@ To run the application `python my_life_calendar_project/manage.py runserver`. Th
 
 The django application 
 
+![Home](images/home.png)
+
+In the home we can insert the birth date and the life expectancy. The by pressing the Submit button we get a table with all the days from the firt day of the birth year classified as:
+- light grey: days before the birth date and after the expected death date
+- light pink: lived days before the current date
+- light green: future days until the expected death date 
+
+![Days](images/days.png)
+
 ## Acknowledgements
+
+Thanks [my life calendar]( https://www.ekn.io/calendar/) for the ispiration
