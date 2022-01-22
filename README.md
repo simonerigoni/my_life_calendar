@@ -18,3 +18,5 @@ To run the application `python my_life_calendar_project/manage.py runserver`. Th
 ## Results
 
 The django application 
+
+## Acknowledgements
