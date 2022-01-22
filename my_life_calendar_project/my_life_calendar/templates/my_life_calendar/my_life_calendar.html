@@ -14,7 +14,7 @@
             <form method="post" action="" role="form" novalidate>
               {% csrf_token %}
               <label for="birth-date">Birth Date:</label>
-              <input type="date" name="birth-date" value="2022-01-01" min="1900-01-01" max="2022-12-31">
+              <input type="date" name="birth-date" value="2000-01-01" min="1900-01-01" max="2100-12-31">
               <br>
               <label for="life-expectancy">Life Expectancy:</label>
               <input type="number" name="life-expectancy" value="83" min="1" max="150">
