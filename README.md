@@ -8,6 +8,9 @@ When I have first seen the [my life calendar]( https://www.ekn.io/calendar/) I w
 
 This project uses Python 3.9.2 and the following libraries:
 * [Django](https://www.djangoproject.com/)
+* [Pandas](https://pandas.pydata.org/)
+* [Numpy](https://numpy.org/)
+* [openpyxl](https://openpyxl.readthedocs.io/en/stable/)
 
 More informations in `requirements.txt`. To create it I have used `python -m pip freeze > requirements.txt`. To install all Python packages written in the requirements.txt file run `pip install -r requirements.txt`.
 
