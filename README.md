@@ -28,6 +28,8 @@ In the home we can insert the birth date and the life expectancy. By pressing th
 
 ![Days](images/days.png)
 
+By clicking the Downlosd button is possible to download the calendar in Excel format
+
 ## Acknowledgements
 
 Thanks [my life calendar]( https://www.ekn.io/calendar/) for the ispiration
