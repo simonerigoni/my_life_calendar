@@ -26,7 +26,18 @@
           </div>
         </div>
         <hr>
-        {{ html_table }}
+        {% if html_table|length %}
+
+          {{ html_table }}
+
+          <br>
+          <form method="post" action="" role="form" novalidate>
+            {% csrf_token %}
+            <input type="submit" name="download-button" class="btn btn-info btn-send" value="Download">
+          </form>
+        {% else %}
+            <p>Enter some values</p>
+        {% endif %}
       </div>
     </div>    
   </div>

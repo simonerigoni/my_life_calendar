@@ -1,6 +1,11 @@
 from django.shortcuts import render
 from django.utils.safestring import mark_safe
+from django.conf import settings
 import datetime
+import pandas as pd
+import mimetypes
+from django.http.response import HttpResponse
+
 
 # Create your views here.
 
@@ -47,8 +52,7 @@ def my_life_calendar(request):
                 list_years = list(set([d.year for d in dates]))
                 list_years.sort()
 
-                str_table = '<div style="overflow: auto"><table>'
-                str_table += '<tr><th>Years \ Months</th>'
+                str_table = '<table><tr><th>Years \ Months</th>'
 
                 for month in range(1, 13):
                     temp_date = datetime.datetime.strptime('2020-' + str(month) + '-01', '%Y-%m-%d')
@@ -60,8 +64,6 @@ def my_life_calendar(request):
                     str_table += '<tr><td>' + str(year) + '</td>'
 
                     for month in range(1, 13):
-                        #str_table += '<td>'
-
                         for d in dates:
                             cell_color = 'lightgrey'
                             if d.year == year and d.month == month:
@@ -85,15 +87,25 @@ def my_life_calendar(request):
                         for d in range(last_day, 31):
                             str_table += '<td> </td>'
 
-                        #str_table += '</td>'
-
                     str_table += '</tr>'
 
-                str_table += '</table></div>'
-                html_table =  mark_safe(str_table)
+                str_table += '</table>'
+
+                df = pd.read_html(str_table)[0]
+                #print(df.shape)
+                df.to_excel(settings.MEDIA_ROOT + '/my_life_calendar/my_life_calendar.xlsx', index = False)
+                str_table = '<div style="overflow: auto">' + str_table + '</table></div>'
+                html_table = mark_safe(str_table)
                 
-        else:
-            pass
+        elif 'download-button' in request.POST:
+            filename = 'my_life_calendar.xlsx'
+            filepath = settings.MEDIA_ROOT + '/my_life_calendar/' + filename
+            path = open(filepath, 'rb')
+            mime_type, _ = mimetypes.guess_type(filepath)
+            response = HttpResponse(path, content_type = mime_type)
+            response['Content-Disposition'] = "attachment; filename={}".format(filename)
+            return response
+        pass
     else:
         pass
 

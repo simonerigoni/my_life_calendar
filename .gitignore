@@ -14,3 +14,7 @@ pyvenv.cfg
 # Ignore static
 
 my_life_calendar_project/static/
+
+# Ignore media
+
+my_life_calendar_project/media/
