@@ -24,14 +24,14 @@ The django application
 
 ![Home](images/home.png)
 
-In the home we can insert the birth date and the life expectancy. By pressing the Submit button we get a table with all the days from the first day of the birth year classified as:
+In the home we can insert the birth date and the life expectancy. By pressing the Submit button we get a graph showing the day distribution and a table with all the days from the first day of the birth year classified as:
 - light grey: days before the birth date and after the expected death date
 - light pink: lived days before the current date
 - light green: future days until the expected death date 
 
 ![Days](images/days.png)
 
-By clicking the Downlosd button is possible to download the calendar in Excel format
+By clicking the Download button is possible to download the calendar in Excel format
 
 ## Acknowledgements
 

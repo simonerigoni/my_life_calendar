@@ -2,7 +2,7 @@
 
 ## New ideas
 
-- What about adding the capabiliy to drill up and down in a time hierarchy (Day, Week, Month, Quarter, Half and Year)?
+- [ ] What about adding the capabiliy to drill up and down in a time hierarchy (Day, Week, Month, Quarter, Half and Year)?
 
 ## To Do
 
@@ -11,3 +11,5 @@
 
 
 ## Done ✓
+
+- [x] Add a pie chart showing the day distribution
