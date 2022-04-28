@@ -26,11 +26,57 @@
           </div>
         </div>
         <hr>
+        <!-- {{ html_table|pprint}} -->
+
         {% if html_table|length %}
+
+        <h3>Graph</h3>
+
+          <!-- {{ day_data_labels|pprint}} -->
+          <!-- {{ day_data_data|pprint}} -->
+
+          <div id="container" style="width: 75%;">
+            <canvas id="pie-chart"></canvas>
+          </div>
+
+          <script type="text/javascript">
+            var pie_chart_config = {
+              type: 'pie',
+              data: {
+                datasets: [{
+                  data: {{ day_data_data|safe }},
+                  backgroundColor: ['LightPink', 'LightGreen'
+                ],
+                  label: 'Days Distribution'
+                }],
+                labels: {{ day_data_labels|safe }}
+              },
+              options: {
+                responsive: true,
+                title: {
+                  display: true,
+                  text: 'Days Distribution'
+                },
+                animation: {
+                  animateScale: true,
+                  animateRotate: true
+                }
+              }
+            };
+
+            window.onload = function() {
+              var ctx = document.getElementById('pie-chart').getContext('2d');
+              window.myPie = new Chart(ctx, pie_chart_config);
+            };
+          </script>
+
+          <br>
+          <h3>Table</h3>
 
           {{ html_table }}
 
           <br>
+
           <form method="post" action="" role="form" novalidate>
             {% csrf_token %}
             <input type="submit" name="download-button" class="btn btn-info btn-send" value="Download">

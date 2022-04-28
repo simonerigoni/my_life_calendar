@@ -5,13 +5,15 @@ import datetime
 import pandas as pd
 import mimetypes
 from django.http.response import HttpResponse
-
+import json
 
 # Create your views here.
 
 def my_life_calendar(request):
 
     html_table = ''
+    day_data_labels = []
+    day_data_data = []
 
     if request.method == 'POST':
         if 'submit-button' in request.POST:
@@ -60,6 +62,9 @@ def my_life_calendar(request):
 
                 str_table += '</tr>'
 
+                count_lived_days = 0
+                count_remaining_days = 0
+
                 for year in list_years:
                     str_table += '<tr><td>' + str(year) + '</td>'
 
@@ -73,8 +78,10 @@ def my_life_calendar(request):
                                     if d < death_date:
                                         if d < today_date:
                                             cell_color = 'lightpink'
+                                            count_lived_days = count_lived_days + 1
                                         else:
                                             cell_color = 'lightgreen'
+                                            count_remaining_days = count_remaining_days + 1
                                     else:
                                         cell_color = 'lightgrey'
 
@@ -96,6 +103,12 @@ def my_life_calendar(request):
                 df.to_excel(settings.MEDIA_ROOT + '/my_life_calendar/my_life_calendar.xlsx', index = False)
                 str_table = '<div style="overflow: auto">' + str_table + '</table></div>'
                 html_table = mark_safe(str_table)
+
+                day_data_labels = ['Lived', 'Remaining']
+                day_data_data = [count_lived_days, count_remaining_days]
+
+                #print(day_data_labels)
+                #print(day_data_data)
                 
         elif 'download-button' in request.POST:
             filename = 'my_life_calendar.xlsx'
@@ -109,4 +122,4 @@ def my_life_calendar(request):
     else:
         pass
 
-    return render(request, 'my_life_calendar/my_life_calendar.html', {'html_table':html_table})
+    return render(request, 'my_life_calendar/my_life_calendar.html', {'html_table':html_table, 'day_data_labels': json.dumps(day_data_labels), 'day_data_data': json.dumps(day_data_data)})
