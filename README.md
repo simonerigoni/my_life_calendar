@@ -2,7 +2,7 @@
 
 ## Introduction
 
-When I have first seen the [my life calendar]( https://www.ekn.io/calendar/) I was impressed by it. It made me think about how the time just flow without we noticing it. It is a great idea to visualize it so I have decide to make my own version of the life calendar.
+When I have first saw the [my life calendar]( https://www.ekn.io/calendar/) I was impressed by it. It made me think about how the time just flow without we noticing it. It is a great idea to visualize it so I have decided to make my own version of the life calendar.
 
 ## Software and Libraries
 
@@ -31,7 +31,7 @@ In the home we can insert the birth date and the life expectancy. By pressing th
 
 ![Days](images/days.png)
 
-By clicking the Download button is possible to download the calendar in Excel format
+By clicking the **Download** button is possible to download the calendar in Excel format
 
 ## Acknowledgements
 
