@@ -33,6 +33,8 @@ In the home we can insert the birth date and the life expectancy. By pressing th
 
 By clicking the **Download** button is possible to download the calendar in Excel format
 
+You can find more information in this [blog post](https://simone-rigoni01.medium.com/funny-little-python-project-my-life-calendar-aa1e751a69a0)
+
 ## Acknowledgements
 
 Thanks [my life calendar]( https://www.ekn.io/calendar/) for the ispiration
