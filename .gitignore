@@ -1,4 +1,4 @@
-# Ignore the python compiled files
+# Files, directories or patterns that should be excluded from Git tracking
 
 *.pyc
 

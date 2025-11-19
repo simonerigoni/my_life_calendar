@@ -1,4 +1,4 @@
-# My life calendar
+# My Life Calendar
 
 ## Introduction
 
@@ -35,6 +35,14 @@ By clicking the **Download** button is possible to download the calendar in Exce
 
 You can find more information in this [blog post](https://simone-rigoni01.medium.com/funny-little-python-project-my-life-calendar-aa1e751a69a0)
 
-## Acknowledgements
+## List of activities
 
-Thanks [my life calendar]( https://www.ekn.io/calendar/) for the ispiration
+In the [TODO.md](TODO.md) file you can find the list of tasks and on going activities.
+
+## Licensing and acknowledgements
+
+Have a look at [LICENSE.md](LICENSE.md) and thanks to [Erik K. Nyquist]( https://www.ekn.io/calendar/) for the ispiration.
+
+## Outro
+
+I hope this repository was interesting and thank you for taking the time to check it out. On my Medium you can find a more in depth [story](https://medium.com/@simone-rigoni01/) and on my Blogspot you can find the same [post](https://simonerigoni01.blogspot.com/) in italian. Let me know if you have any question and if you like the content that I create feel free to [buy me a coffee](https://www.buymeacoffee.com/simonerigoni).

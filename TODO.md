@@ -1,15 +1,21 @@
-# To do list 
+# My Life Calendar
 
-## New ideas
+## Introduction
+
+Overview of the status of the tasks of this project.
+
+## Tasks
+
+
+### To do
 
 - [ ] What about adding the capabiliy to drill up and down in a time hierarchy (Day, Week, Month, Quarter, Half and Year)?
 
-## To Do
+### In Progress
 
+- [ ]
 
-## In Progress
+### Done ✓
 
-
-## Done ✓
-
+- [x] Project initialization
 - [x] Add a pie chart showing the day distribution
