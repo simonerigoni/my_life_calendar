@@ -12,7 +12,14 @@ This project uses Python 3.9.2 and the following libraries:
 * [Numpy](https://numpy.org/)
 * [openpyxl](https://openpyxl.readthedocs.io/en/stable/)
 
-More informations in `requirements.txt`. To create it I have used `python -m pip freeze > requirements.txt`. To install all Python packages written in the requirements.txt file run `pip install -r requirements.txt`.
+## Local configuration
+
+To setup a new local enviroment and install all dependencies you can run `python -m venv .venv` and then `pip install -r requirements.txt`. 
+To create the requirements file you can run  `python -m pip freeze > requirements.txt`.
+
+## Testing
+
+No test implemented.
 
 ## Running the code
 
