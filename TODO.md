@@ -6,7 +6,6 @@ Overview of the status of the tasks of this project.
 
 ## Tasks
 
-
 ### To do
 
 - [ ] What about adding the capabiliy to drill up and down in a time hierarchy (Day, Week, Month, Quarter, Half and Year)?
@@ -14,7 +13,7 @@ Overview of the status of the tasks of this project.
 
 ### In Progress
 
-- [ ]
+- [ ] None
 
 ### Done ✓
 
