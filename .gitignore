@@ -1,20 +1,26 @@
 # Files, directories or patterns that should be excluded from Git tracking
 
+# Temp stuff
+temp/
+
+# Python compiled files
 *.pyc
 
-# Ignore the venv directories and configuration
+# Virtual enviroment
+.venv/
 
-bin
-include
-lib
-lib64
-share
-pyvenv.cfg
+# Pytest cache
+.pytest_cache/
 
-# Ignore static
+# Ruff cache
+.ruff_cache/
 
-my_life_calendar_project/static/
+# uv stuff
+.python-version
+uv.lock
 
-# Ignore media
+# Django static
+static/
 
-my_life_calendar_project/media/
+# Django media
+media/
