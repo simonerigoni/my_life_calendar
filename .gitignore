@@ -15,12 +15,11 @@ temp/
 # Ruff cache
 .ruff_cache/
 
-# uv stuff
-.python-version
-uv.lock
-
 # Django static
 static/
 
 # Django media
 media/
+
+# pytest-cov stuff
+.coverage

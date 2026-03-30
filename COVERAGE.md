@@ -1,0 +1,23 @@
+| Name                                                 |    Stmts |     Miss |    Cover |
+|----------------------------------------------------- | -------: | -------: | -------: |
+| hello\_world\_app\\\_\_init\_\_.py                   |        0 |        0 |     100% |
+| hello\_world\_app\\admin.py                          |        0 |        0 |     100% |
+| hello\_world\_app\\apps.py                           |        3 |        0 |     100% |
+| hello\_world\_app\\migrations\\\_\_init\_\_.py       |        0 |        0 |     100% |
+| hello\_world\_app\\models.py                         |        0 |        0 |     100% |
+| hello\_world\_app\\tests.py                          |        4 |        0 |     100% |
+| home\_app\\\_\_init\_\_.py                           |        0 |        0 |     100% |
+| home\_app\\admin.py                                  |        0 |        0 |     100% |
+| home\_app\\apps.py                                   |        3 |        0 |     100% |
+| home\_app\\migrations\\\_\_init\_\_.py               |        0 |        0 |     100% |
+| home\_app\\models.py                                 |        0 |        0 |     100% |
+| home\_app\\tests.py                                  |        4 |        0 |     100% |
+| my\_life\_calendar\_app\\\_\_init\_\_.py             |        0 |        0 |     100% |
+| my\_life\_calendar\_app\\admin.py                    |        0 |        0 |     100% |
+| my\_life\_calendar\_app\\apps.py                     |        3 |        0 |     100% |
+| my\_life\_calendar\_app\\migrations\\\_\_init\_\_.py |        0 |        0 |     100% |
+| my\_life\_calendar\_app\\models.py                   |        0 |        0 |     100% |
+| my\_life\_calendar\_app\\tests.py                    |        4 |        0 |     100% |
+| my\_life\_calendar\_project\\\_\_init\_\_.py         |        0 |        0 |     100% |
+| my\_life\_calendar\_project\\settings.py             |       23 |        0 |     100% |
+| **TOTAL**                                            |   **44** |    **0** | **100%** |
