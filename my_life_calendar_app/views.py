@@ -47,9 +47,7 @@ def my_life_calendar(request):
                 current_date = datetime.datetime.strptime(
                     str(birth_date.year) + "-01-01", "%Y-%m-%d"
                 )
-                end_date = datetime.datetime.strptime(
-                    str(death_date.year) + "-12-31", "%Y-%m-%d"
-                )
+                end_date = datetime.datetime.strptime(str(death_date.year) + "-12-31", "%Y-%m-%d")
 
                 dates = []
 
@@ -64,12 +62,8 @@ def my_life_calendar(request):
                 str_table = r"<table><tr><th>Years \ Months</th>"
 
                 for month in range(1, 13):
-                    temp_date = datetime.datetime.strptime(
-                        "2020-" + str(month) + "-01", "%Y-%m-%d"
-                    )
-                    str_table += (
-                        '<td colspan="31">' + temp_date.strftime("%B") + "</td>"
-                    )
+                    temp_date = datetime.datetime.strptime("2020-" + str(month) + "-01", "%Y-%m-%d")
+                    str_table += '<td colspan="31">' + temp_date.strftime("%B") + "</td>"
 
                 str_table += "</tr>"
 
@@ -93,18 +87,12 @@ def my_life_calendar(request):
                                             count_lived_days = count_lived_days + 1
                                         else:
                                             cell_color = "lightgreen"
-                                            count_remaining_days = (
-                                                count_remaining_days + 1
-                                            )
+                                            count_remaining_days = count_remaining_days + 1
                                     else:
                                         cell_color = "lightgrey"
 
                                 str_table += (
-                                    '<td bgcolor="'
-                                    + cell_color
-                                    + '">'
-                                    + str(d.day)
-                                    + "</td>"
+                                    '<td bgcolor="' + cell_color + '">' + str(d.day) + "</td>"
                                 )
 
                                 last_day = d.day
@@ -125,12 +113,8 @@ def my_life_calendar(request):
                     os.makedirs(media_folder)
                 else:
                     pass
-                df.to_excel(
-                    os.path.join(media_folder, "my_life_calendar.xlsx"), index=False
-                )
-                str_table = (
-                    '<div style="overflow: auto">' + str_table + "</table></div>"
-                )
+                df.to_excel(os.path.join(media_folder, "my_life_calendar.xlsx"), index=False)
+                str_table = '<div style="overflow: auto">' + str_table + "</table></div>"
                 html_table = mark_safe(str_table)
 
                 day_data_labels = ["Lived", "Remaining"]
