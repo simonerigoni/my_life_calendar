@@ -1,5 +1,5 @@
-name: "Install uv"
-description: "Install uv with Github Action."
+name: Install uv
+description: Install uv with Github Action
 runs:
   using: composite
   steps:
