@@ -19,3 +19,4 @@ Overview of the status of the tasks of this project.
 - [x] Project initialization
 - [x] Add a pie chart showing the day distribution
 - [x] Use uv and pre-commit instead of custom scripts
+- [x] Add CI
