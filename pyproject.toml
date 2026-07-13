@@ -5,7 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "django>=5.2.13",
+    "django>=5.2.15",
     "lxml>=6.1.0",
     "openpyxl>=3.1.5",
     "pandas>=2.3.3",
