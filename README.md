@@ -6,7 +6,7 @@ When I have first saw the [my life calendar]( https://www.ekn.io/calendar/) I wa
 
 ## Software and Libraries
 
-This project uses Python 3.11 and the most important packages are:
+This project uses Python 3.14 and the most important packages are:
 
 * [Django](https://www.djangoproject.com/)
 * [Pandas](https://pandas.pydata.org/)
