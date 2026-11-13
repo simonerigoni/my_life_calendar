@@ -1,5 +1,7 @@
 # My Life Calendar
 
+[![CI](https://github.com/simonerigoni/my_life_calendar/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/simonerigoni/my_life_calendar/actions/workflows/ci.yml?query=branch%3Amain) [![License](https://img.shields.io/github/license/simonerigoni/my_life_calendar)](LICENSE.md) [![Python](https://img.shields.io/badge/python-3.14-blue)](pyproject.toml) [![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv) [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit) [![Renovate](https://img.shields.io/badge/renovate-enabled-brightgreen?logo=renovatebot)](https://renovatebot.com)
+
 ## Introduction
 
 When I have first saw the [my life calendar]( https://www.ekn.io/calendar/) I was impressed by it. It made me think about how the time just flow without we noticing it. It is a great idea to visualize it so I have decided to make my own version of the life calendar.
