@@ -1,14 +1,14 @@
-from django.shortcuts import render
-from django.utils.safestring import mark_safe
-from django.conf import settings
-import os
 import datetime
-import pandas as pd
-import mimetypes
-from django.http.response import HttpResponse
 import json
+import mimetypes
+import os
 from io import StringIO
 
+import pandas as pd
+from django.conf import settings
+from django.http.response import HttpResponse
+from django.shortcuts import render
+from django.utils.safestring import mark_safe
 
 # Create your views here.
 
@@ -99,7 +99,7 @@ def my_life_calendar(request):
                             else:
                                 pass
 
-                        for d in range(last_day, 31):
+                        for _d in range(last_day, 31):
                             str_table += "<td> </td>"
 
                     str_table += "</tr>"
@@ -130,7 +130,7 @@ def my_life_calendar(request):
             path = open(filepath, "rb")
             mime_type, _ = mimetypes.guess_type(filepath)
             response = HttpResponse(path.read(), content_type=mime_type)
-            response["Content-Disposition"] = "attachment; filename={}".format(filename)
+            response["Content-Disposition"] = f"attachment; filename={filename}"
             return response
         pass
     else:
