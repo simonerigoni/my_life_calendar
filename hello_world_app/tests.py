@@ -1,9 +1,8 @@
-from django.test import TestCase
+from django.test import RequestFactory
 
-# Create your tests here.
+from hello_world_app.views import hello_world
 
 
-class HelloWorldAppTestCase(TestCase):
-    def test_dummy(self):
-        """A dummy test that always passes."""
-        self.assertEqual(42, 42)
+def test_hello_world_view_renders():
+    response = hello_world(RequestFactory().get("/hello_world/"))
+    assert response.status_code == 200

@@ -1,6 +1,6 @@
 # My Life Calendar
 
-[![CI](https://github.com/simonerigoni/my_life_calendar/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/simonerigoni/my_life_calendar/actions/workflows/ci.yml?query=branch%3Amain) [![License](https://img.shields.io/github/license/simonerigoni/my_life_calendar)](LICENSE.md) [![Python](https://img.shields.io/badge/python-3.14-blue)](pyproject.toml) [![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv) [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit) [![Renovate](https://img.shields.io/badge/renovate-enabled-brightgreen?logo=renovatebot)](https://renovatebot.com)
+[![CI](https://github.com/simonerigoni/my_life_calendar/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/simonerigoni/my_life_calendar/actions/workflows/ci.yml?query=branch%3Amain) [![License](https://img.shields.io/github/license/simonerigoni/my_life_calendar)](LICENSE.md) [![Python](https://img.shields.io/badge/python-3.15-blue)](pyproject.toml) [![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv) [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit) [![Renovate](https://img.shields.io/badge/renovate-enabled-brightgreen?logo=renovatebot)](https://renovatebot.com)
 
 ## Introduction
 
@@ -8,7 +8,7 @@ When I have first saw the [my life calendar]( https://www.ekn.io/calendar/) I wa
 
 ## Software and Libraries
 
-This project uses Python 3.14 and the most important packages are:
+This project uses Python 3.15 and the most important packages are:
 
 * [Django](https://www.djangoproject.com/)
 * [Pandas](https://pandas.pydata.org/)
