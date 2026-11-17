@@ -16,7 +16,6 @@ dependencies = [
 
 
 [project.urls]
-Homepage = "https://github.com/simonerigoni/my_life_calendar"
 Repository = "https://github.com/simonerigoni/my_life_calendar"
 Medium = "https://medium.com/@simone-rigoni01/funny-little-python-project-my-life-calendar-aa1e751a69a0"
 
