@@ -4,12 +4,20 @@ version = "0.1.0"
 description = "My life calendar"
 readme = "README.md"
 requires-python = ">=3.15"
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE.md"]
+authors = [{ name = "Simone Rigoni" }]
 dependencies = [
     "django>=5.2.13",
     "lxml>=6.1.0",
     "openpyxl>=3.1.5",
     "pandas>=2.3.3",
 ]
+
+
+[project.urls]
+Homepage = "https://github.com/simonerigoni/my_life_calendar"
+Repository = "https://github.com/simonerigoni/my_life_calendar"
 
 [dependency-groups]
 dev = [

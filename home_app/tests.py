@@ -1,9 +1,9 @@
-from django.test import TestCase
+from django.test import RequestFactory
 
-# Create your tests here.
+from home_app.views import home, welcome
 
 
-class HomeAppTestCase(TestCase):
-    def test_dummy(self):
-        """A dummy test that always passes."""
-        self.assertEqual(42, 42)
+def test_home_and_welcome_views_render():
+    factory = RequestFactory()
+    assert home(factory.get("/")).status_code == 200
+    assert welcome(factory.get("/welcome/")).status_code == 200
