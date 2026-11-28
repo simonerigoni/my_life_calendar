@@ -43,3 +43,7 @@ venv = ".venv"
 testpaths = ["hello_world_app", "home_app", "my_life_calendar_app"]
 python_files = ["tests.py", "test_*.py"]
 addopts = "--ds=my_life_calendar_project.settings"
+
+[tool.coverage.run]
+source = ["hello_world_app", "home_app", "my_life_calendar_app", "my_life_calendar_project"]
+omit = ["*/migrations/*", "*/tests.py"]
